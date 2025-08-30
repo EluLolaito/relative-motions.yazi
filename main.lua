@@ -150,9 +150,6 @@ local render_numbers = ya.sync(function(_, mode)
             end
         end
 
-        local total = #self._folder.files
-        local max_digits = #tostring(total)
-
         local left, right = {}, {}
         for _, f in ipairs(files) do
             local entity = Entity:new(f)
